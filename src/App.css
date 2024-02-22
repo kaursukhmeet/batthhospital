@@ -5,3 +5,23 @@
 #footerlinks{
   background-color:rgb(27, 124, 209)e !important;
 }
+
+.caraouse{
+  height:500px;
+  width: 100%;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+body {
+  background-color: brown;
+  padding : 30px;
+}
+
+.accordion{
+  margin:1%;
+  padding: 2%;
+}

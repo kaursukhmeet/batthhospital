@@ -6,12 +6,12 @@ import '../App.css';
 export default function Footer(){
     return (
         <>
-        <Container fluid expand="sm">
+        <Container fluid expand="sm" style={{"padding":"30px"}}>
         <Row className='text-bg-info'>
         <Col>Batth Hospital
         Mall Godam Road, Palia Kalan, Lakhimpur Kheri, Uttar Pradesh 262902
-        <br/><span>Follow Us: <i class="bi bi-instagram"></i>
-        {' '}<i class="bi bi-facebook"></i></span></Col>
+        <br/><span>Follow Us: <i className="bi bi-instagram"></i>
+        {' '}<i className="bi bi-facebook"></i></span></Col>
         <Col><h3>Services</h3>
 
                 <p>24/7 Emergency</p>
@@ -27,12 +27,12 @@ export default function Footer(){
                 <p>Book Appointment</p>
         </Col>
         <Col><h3>Contact Us</h3>
-            <p><i class="bi bi-telephone-fill"></i>{' '}phone 1</p>
-            <p><i class="bi bi-telephone-fill"></i>{' '}phone 2</p>
-            <p><i class="bi bi-envelope-fill"></i>{' '}email</p>
+            <p><i className="bi bi-telephone-fill"></i>{' '}phone 1</p>
+            <p><i className="bi bi-telephone-fill"></i>{' '}phone 2</p>
+            <p><i className="bi bi-envelope-fill"></i>{' '}email</p>
         </Col>
       </Row>
-        <div d-flex align-items-center><span>&copy;2024 Copyright Batth Hospital. All rights reserved</span></div>
+        <div><span>&copy;2024 Copyright Batth Hospital. All rights reserved</span></div>
         </Container>
         </>
     );
