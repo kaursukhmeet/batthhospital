@@ -1,10 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Img3 from '../assets/images/hospital3.png';
-import Img2 from '../assets/images/hospital2.png';
-import Img1 from '../assets/images/hospital1.png';
+import Img3 from '../assets/images/caraousel1.jpg';
+import Img2 from '../assets/images/caraousel2.jpg';
+import Img1 from '../assets/images/caraousel3.jpg';
 
 export default function Home(){
-    return (<Carousel>
+    return (
+    <Carousel id='home'>
         <Carousel.Item>
         <img className='caraouse' src={Img1} alt='Slide 1'/>
           <Carousel.Caption>

@@ -5,9 +5,24 @@ import '../App.css';
 
 export default function Footer(){
     return (
-        <>
-        <Container fluid expand="sm" style={{"padding":"30px"}}>
-        <Row className='text-bg-info'>
+        <Container fluid>
+        <Row style={{'textAlign':'center', 'backgroundColor':'var(--global-color)','padding':'24px 14px 24px 14px'}}> 
+            <Col>
+                <span>&copy;2024 Copyright <b>Batth Hospital</b>. All rights reserved</span>
+            </Col>
+            <Col>
+                <span><i className="bi bi-instagram"></i>{''}<i className="bi bi-facebook"></i></span>
+            </Col>
+        </Row>
+        </Container>
+    );
+}
+/*
+<Container fluid expand="sm" style={{"padding":"30px"}}>
+    
+</Container>
+*/
+/*<Row className='text-bg-info'>
         <Col>Batth Hospital
         Mall Godam Road, Palia Kalan, Lakhimpur Kheri, Uttar Pradesh 262902
         <br/><span>Follow Us: <i className="bi bi-instagram"></i>
@@ -29,11 +44,6 @@ export default function Footer(){
         <Col><h3>Contact Us</h3>
             <p><i className="bi bi-telephone-fill"></i>{' '}phone 1</p>
             <p><i className="bi bi-telephone-fill"></i>{' '}phone 2</p>
-            <p><i className="bi bi-envelope-fill"></i>{' '}email</p>
+            <p><i className="bi bi-envelope-fill"></i>{' '}batth.clinic@gmail.com</p>
         </Col>
-      </Row>
-        <div><span>&copy;2024 Copyright Batth Hospital. All rights reserved</span></div>
-        </Container>
-        </>
-    );
-}
+      </Row>*/

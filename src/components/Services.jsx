@@ -18,8 +18,9 @@ const SERVICES = [
 
 export default function Services(){
     
-    return(
-        <Accordion>
+    return(<section id='services'>
+      <h1>Our Services</h1>
+        <Accordion className="sectionContent">
         {SERVICES.map((item, index) => (
         <Accordion.Item key={index} eventKey={index}>
           <Accordion.Header>
@@ -28,6 +29,7 @@ export default function Services(){
           <Accordion.Body> {item.content} </Accordion.Body>     
         </Accordion.Item>
       ))}
-   </Accordion>
+      </Accordion>
+   </section>
     );
 }
