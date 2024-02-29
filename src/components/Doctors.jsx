@@ -8,7 +8,7 @@ import Doctor1 from '../assets/images/prerna.jpg';
 const DOCTORS = [
   {
     title: 'Dr. Ravinder Pal Singh',
-    image: 'ravinder.jpg',
+    image: 'image/ravinder.jpg',
     content: ['M.B.B.S., M.D.(Medicine)','AB Psychology','Ex Resident- RML Delhi, Max Hospital Delhi']
   },
   {

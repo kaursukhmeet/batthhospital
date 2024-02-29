@@ -16,22 +16,22 @@ export default function Contact(){
         <Row>
             <Col>
             <Card className="contactCard">
-                <CardTitle><GeoAltFill/></CardTitle>
-                <CardSubtitle>Address</CardSubtitle>
+                <CardTitle as="h3"><GeoAltFill/></CardTitle>
+                <CardSubtitle as="h5">Address</CardSubtitle>
                 <CardText>Batth Hospital, Mall Godam Road, Palia Kalan, Lakhimpur Kheri, Uttar Pradesh 262902</CardText>
             </Card>
             </Col>
             <Col>
             <Card className="contactCard">
-                <CardTitle><EnvelopeFill/></CardTitle>
-                <CardSubtitle>Email Us</CardSubtitle>
+                <CardTitle as="h3"><EnvelopeFill/></CardTitle>
+                <CardSubtitle as="h5">Email Us</CardSubtitle>
                 <CardText>batth.clinic@gmail.com</CardText>
             </Card>
             </Col>
             <Col>
             <Card className="contactCard">
-                <CardTitle><TelephoneFill/></CardTitle>
-                <CardSubtitle>Call Us</CardSubtitle>
+                <CardTitle as="h3"><TelephoneFill/></CardTitle>
+                <CardSubtitle as="h5">Call Us</CardSubtitle>
                 <CardText>
                     <p>123456</p>
                     <p>123456</p>
