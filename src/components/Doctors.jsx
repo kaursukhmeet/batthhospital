@@ -8,7 +8,7 @@ import Doctor1 from '../assets/images/prerna.jpg';
 const DOCTORS = [
   {
     title: 'Dr. Ravinder Pal Singh',
-    image: 'image/ravinder.jpg',
+    image: 'ravinder.jpg',
     content: ['M.B.B.S., M.D.(Medicine)','AB Psychology','Ex Resident- RML Delhi, Max Hospital Delhi']
   },
   {
@@ -25,8 +25,8 @@ export default function Doctors(){
         <Row xs={1} md={2} className="g-2 justify-content-center">
           {DOCTORS.map((item,index)=>(
             <Col className='doctor-column' key={index} >
-              <Card onh>
-              <Card.Img variant="center" className='align-center' src={item.image} style={{ 'width': '40%' ,'height':'70%','padding':'24px 24px 24px 24px'}}/>
+              <Card >
+              <Card.Img variant="center" className='align-center doctor-image' src={item.image} />
             <Card.Body>
               <Card.Title style={{'fontWeight':'bolder'}}>{item.title}</Card.Title>
               <Card.Text style={{'opacity':'50%'}}>

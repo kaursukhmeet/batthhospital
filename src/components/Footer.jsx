@@ -8,10 +8,10 @@ export default function Footer(){
         <Container fluid>
         <Row style={{'textAlign':'center', 'backgroundColor':'var(--global-color)','padding':'24px 14px 24px 14px'}}> 
             <Col>
-                <span>&copy;2024 Copyright <b>Batth Hospital</b>. All rights reserved</span>
+                &copy;2024 Copyright <b>Batth Hospital</b>. All rights reserved
             </Col>
             <Col>
-                <span><i className="bi bi-instagram"></i>{''}<i className="bi bi-facebook"></i></span>
+                <i className="bi bi-instagram"></i>{' '}<i className="bi bi-facebook"></i>
             </Col>
         </Row>
         </Container>

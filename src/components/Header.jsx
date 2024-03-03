@@ -1,4 +1,5 @@
 import '../App.css';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,8 +8,31 @@ import Button from 'react-bootstrap/Button';
 import Logo from '../assets/images/logo.jpg';
 
 export default function Header(){
+  const [navIsOpen, setNavIsOpen] = React.useState(false);
+  const navRef = React.useRef();
+
+  React.useEffect(() => {
+    const handleOutsideClick = (event) => {
+      debugger;
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setNavIsOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setNavIsOpen((open)=>!open);
+  };
+
+  
   return (
-    <Navbar className="bg-body-tertiary" expand="lg" style={{'position':'fixed', 'zIndex':'9999','width':'100%','top':'0','height':'80px'}}>
+    <Navbar collapseOnSelect className="bg-body-tertiary" fixed='top' expand="lg" ref={navRef} expanded={navIsOpen} onToggle={toggleMenu}>
         <Container className='navigation'>
           <Navbar.Brand href="#home">
             <img
@@ -16,10 +40,10 @@ export default function Header(){
               src={Logo}
               width="60"
               height="60"
-              style={{'border-radius':"50%"}}
+              style={{'borderRadius':"50%"}}
               className="d-inline-block align-top"
             />{' '}
-            <span style={{"display":"inline-block","fontSize":"40px","align" : "bottom"}}>Batth Hospital</span>
+            <span >Batth Hospital</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
