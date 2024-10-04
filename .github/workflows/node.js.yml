@@ -31,4 +31,4 @@ jobs:
       env:
         SUPER_SECRET: ${{ secrets.BASE_URL }}
       run: |
-        example-command "$SUPER_SECRET"
+        echo "$SUPER_SECRET"
